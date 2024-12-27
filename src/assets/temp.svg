@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f4f4f4" />
+
+  <!-- Desk -->
+  <ellipse cx="400" cy="550" rx="500" ry="50" fill="#e6e6e6" />
+
+  <!-- Laptop -->
+  <rect x="300" y="200" width="200" height="150" fill="#333" rx="10" ry="10" />
+  <rect x="310" y="210" width="180" height="90" fill="#000" />
+  <line x1="300" y1="350" x2="500" y2="350" stroke="#333" stroke-width="10" />
+  <rect x="310" y="360" width="180" height="20" fill="#666" />
+
+  <!-- Hands -->
+  <ellipse cx="320" cy="420" rx="30" ry="20" fill="#f2a07e" />
+  <ellipse cx="480" cy="420" rx="30" ry="20" fill="#f2a07e" />
+
+  <!-- Notepad -->
+  <rect x="200" y="430" width="100" height="60" fill="#ffcc00" />
+  <line x1="200" y1="440" x2="300" y2="440" stroke="#e6b800" stroke-width="2" />
+
+  <!-- Mouse -->
+  <ellipse cx="520" cy="450" rx="30" ry="20" fill="#ccc" />
+
+  <!-- Phone -->
+  <rect x="600" y="420" width="40" height="80" fill="#666" rx="5" ry="5" />
+  <rect x="605" y="425" width="30" height="70" fill="#000" rx="3" ry="3" />
+
+  <!-- Floating Skill Tags -->
+  <g font-family="Arial" font-weight="bold">
+    <!-- Python -->
+    <rect x="180" y="120" width="100" height="40" fill="#ff6f61" rx="5" ry="5" />
+    <text x="230" y="145" fill="#fff" font-size="18" text-anchor="middle">Python</text>
+
+    <!-- HTML -->
+    <rect x="350" y="80" width="100" height="40" fill="#f39c12" rx="5" ry="5" />
+    <text x="400" y="105" fill="#fff" font-size="18" text-anchor="middle">HTML</text>
+
+    <!-- Code -->
+    <rect x="520" y="140" width="100" height="40" fill="#3498db" rx="5" ry="5" />
+    <text x="570" y="165" fill="#fff" font-size="18" text-anchor="middle">&lt;Code&gt;</text>
+  </g>
+</svg>

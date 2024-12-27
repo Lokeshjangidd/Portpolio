@@ -1,0 +1,504 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  overflow-x: hidden;
+
+  /* height: 7vh; */
+  /* important because it adjust bacgroud size  */
+}
+
+#homePage {
+  background: url('../public/img/landingPage1.jpg');
+  height: 100vh;
+}
+
+#aboutPage {
+  height: 100vh;
+}
+
+.devSeven {
+  width: 25vw;
+  position: absolute;
+  right: 12vw;
+  top: 45vh;
+  animation: imgupAnimation linear 2s;
+
+  /* animation-timeline: view(80% 5%); */
+}
+
+@keyframes imgupAnimation {
+  from {
+    transform: translateX(100vw);
+  }
+
+  to {
+    transform: translateX(0vw);
+
+  }
+}
+
+@keyframes imgDownAnimation {
+  from {
+    transform: translateY(-100vw);
+    color: black;
+  }
+
+  to {
+    transform: translateY(0vw);
+    color: white;
+
+  }
+}
+
+.mainPageContant {
+  top: 25vh;
+  position: absolute;
+  font-size: 2em;
+  max-width: 25rem;
+  margin-left: 5vw;
+  margin-top: 17rem;
+  font-style: italic;
+  animation: imgDownAnimation ease-out 1.5s;
+
+
+}
+
+#inaboutPage {
+  background-color: rgb(77, 46, 77);
+  color: white;
+  margin: 0px;
+
+  font-size: large;
+  height: 100vh;
+  animation-timeline: view();
+}
+
+#aboutPage {
+  position: absolute;
+  background-color: rgb(77, 46, 77);
+  color: white;
+  margin-top: 5vh;
+  margin-left:  3.5vw ;
+  margin-right:  3.5vw ;
+  font-size: large;
+  animation: upAnimation linear;
+  height: auto;
+  animation-timeline: view();
+}
+
+#about {
+  font-size: 2em;
+  font-family: serif;
+  animation: upAnimation;
+  /* animation-timeline: view(); */
+}
+
+.spacialTag {
+  text-shadow: 1px 1px 1px red;
+  font-style: italic;
+}
+
+@keyframes upAnimation {
+  0% {
+    transform: translateX(50vw);
+    color: rgb(158, 183, 20);
+    opacity: 0.7;
+  }
+
+  22% {
+    transform: translateX(0px);
+    color: white;
+    opacity: 1.7;
+
+
+
+  }
+}
+
+
+
+
+.navOtherText {
+  margin: 5px;
+}
+
+#navName {
+  display: inline;
+  position: relative;
+  max-width: 5rem;
+  top: 5px;
+  left: 10px;
+}
+
+.navOtherText {
+  padding: 0.9rem 1.3rem;
+}
+
+.navOT {
+  direction: rtl;
+  position: relative;
+  bottom: 1.4rem;
+}
+
+#name {
+  color: rgb(193, 255, 23);
+  font-weight: 530;
+  font-style: italic;
+  text-shadow: 0.1em 0.1em 0.1em rgb(174, 20, 174);
+}
+
+.devImage {
+  display: inline;
+}
+
+
+/* Screen width between 400px and 700px */
+@media only screen and (min-width: 400px) and (max-width: 700px) {
+  .navOT {
+    display: flex;
+    color: white;
+    font-size: 1.4rem;
+    margin: 5px;
+    overflow-x: hidden;
+    margin-top: 3vh;
+
+
+  }
+}
+
+/* Screen width less than 900px */
+@media (min-width: 900px) {
+  body {
+    width: auto;
+  }
+
+  /* .skillList{
+
+  } */
+
+  .devImage {
+    display: none;
+  }
+
+
+  #navName {
+    display: none;
+  }
+
+  .navOT {
+    display: block;
+    color: white;
+    font-size: 1.4rem;
+    margin: 5px;
+    top: 1em;
+    text-align: center;
+    margin-top: 3vh;
+
+
+  }
+}
+
+/* Adjustments for portrait orientation */
+@media (orientation: portrait) {
+  body {
+    background-size: cover;
+    /* Ensure the background image scales properly */
+  }
+
+  .mainPageContant {
+    font-size: 1.5em;
+    max-width: 18rem;
+    margin-left: 1rem;
+    margin-top: 15rem;
+  }
+
+  .navOT {
+    font-size: 1.2rem;
+    /* Adjust navigation text size */
+    margin: 2px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 3vh;
+
+  }
+
+  #navName {
+    display: none;
+  }
+}
+
+.imagesTemp {
+  border: 2px solid purple;
+  box-sizing: border-box;
+}
+
+.imgOne {
+  transition: transform 1s ease 0.4s;
+  animation-iteration-count: 3;
+
+}
+
+.imgOne:hover {
+  animation-iteration-count: 3;
+  transform: translate(10%, 20%) rotate(45deg);
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0%, 0%);
+  }
+
+  50% {
+    transform: translate(50%, 50%);
+  }
+
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+
+.devFour {
+  width: 100px;
+  height: 100px;
+  background-color: purple;
+  transform: translate(0%, 0%);
+  transition: transform 0.5s ease;
+  /* Smooth reset transition */
+}
+
+.devFour:hover {
+  animation: move 1s linear;
+  transform: translate(0%, 0%);
+  /* Move back to (0%, 0%) */
+}
+
+
+/* important for animation */
+@keyframes autorotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(365deg);
+  }
+
+}
+
+.imgTwo {
+
+  animation: autorotate;
+  animation-timeline: view();
+}
+
+@keyframes showImageInCenter {
+  0% {
+    transform: translate(-80%);
+  }
+
+  20% {
+    transform: translate(-40%);
+  }
+
+  30% {
+    transform: translate(0%);
+  }
+
+  45% {
+    transform: translate(35%);
+  }
+
+  60% {
+    transform: translate(35%);
+  }
+
+  80% {
+    transform: translate(35%);
+  }
+
+  100% {
+    transform: translate(50%);
+  }
+}
+
+.tempzimag {
+  border: 5px solid red;
+  border-style: dashed;
+  box-shadow: 5px 6px 3px aqua;
+  /* transform: translate(-80%); */
+  animation: showImageInCenter;
+  animation-timeline: view();
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+}
+
+@keyframes bglow {
+  0% {
+    transform: translate(-80%);
+  }
+
+  20% {
+    transform: translate(-40%);
+  }
+
+  30% {
+    /* transform: translate(0%); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+  }
+
+  45% {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+
+  60% {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+
+  80% {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+
+  100% {
+    transform: translate(100%);
+  }
+}
+
+
+
+.aboutnav {
+  position: absolute;
+  width: 40vw;
+  margin: 0px 0px;
+}
+
+.aboutnavText {
+  margin: 8vw;
+  text-shadow: 1px 1px 2px rgb(0, 139, 139);
+  font-size: 1.5rem;
+}
+
+.skillsSection {
+  position: absolute;
+}
+
+.skillHead {
+  position: absolute;
+  display: inline;
+  width: 50vw;
+  margin-left: 4vw;
+  margin-top: 6vh;
+}
+
+.skillText {
+  position: absolute;
+  display: inline;
+  width: 50vw;
+  margin-left: 5vw;
+  margin-top: 10vh;
+  list-style-type: circle;
+}
+
+.skillList {
+  position: relative;
+  top: 2vh;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 2vh;
+  margin-left: 5vw;
+}
+
+@keyframes mouseHover {
+  from {
+    color: white;
+    text-shadow: 0px 0px 2px aquamarine;
+
+  }
+
+  to {
+    color: aqua;
+    text-shadow: 1px 1px 2px aquamarine;
+  }
+}
+
+.aboutnavText:hover {
+  cursor: pointer;
+  color: aqua;
+  text-shadow: 1px 1px 2px aquamarine;
+
+  animation: mouseHover 1s linear;
+}
+
+.hideDisplay {
+  display: none;
+}
+
+.activeTag {
+  font-weight: bold;
+  font-style: italic;
+  /* color: blue; */
+  border: 2px solid azure;
+  padding: 2px 4px;
+  border-radius: 5px;
+}
+
+.activeTag:hover,
+#act {
+  animation: none;
+  font-weight: bold;
+  font-style: italic;
+  /* color: blue; */
+  border: 2px solid azure;
+  padding: 2px 4px;
+  border-radius: 5px;
+  background-color: aqua;
+  color: white;
+}
+
+/* section project  */
+
+.projectAll {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  grid-gap: 2rem; /* Adjust spacing between projects */
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.proList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.05); /* Subtle background */
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+}
+
+.to-do img {
+  max-width: 200px;
+  margin-bottom: 1.5rem;
+}
+.proItem {
+  font-size: 1.2rem;
+  color: #fff;
+  text-align: center;
+}
+.proList:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
