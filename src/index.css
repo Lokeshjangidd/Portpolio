@@ -12,6 +12,7 @@ body {
 #homePage {
   background: url('../public/img/landingPage1.jpg');
   height: 100vh;
+  color: skyblue;
 }
 
 #aboutPage {
