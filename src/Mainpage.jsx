@@ -29,7 +29,7 @@ export const Mainpage = () => {
 
   return <Fragment>
     <section id="homePage">  <p className="mainPageContant">Hi, My name is <span id="name">Lokesh</span> <br /> And i am a possionate React Web Developer </p>
-      <img src={devSeven} alt="" className="devSeven" />
+      <img src={devSeven} alt="dev image seven not found" className="devSeven" />
     </section>
 
     <section id="inaboutPage">
